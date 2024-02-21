@@ -22,7 +22,11 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${inter.className} bg-fixed bg-gradient-to-tr text-black from-gray-400 to-gray-100 dark:text-gray-100 dark:from-black-100 dark:to-black-300`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
