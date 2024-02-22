@@ -3,14 +3,16 @@ import React, { useState } from "react";
 import type { AppProps } from "next/app";
 import { ThemeProvider } from "next-themes";
 
-// components
+// Components
 import Navbar from "@/components/navigation/Navbar";
 import AboutMe from "./AboutMe";
+import MyServices from "./myServices";
+import Projects from "./projects";
 
 export default function Home() {
   return (
     <ThemeProvider attribute="class">
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center px-6">
         <div className="max-w-[1200px]">
           <div className="min-w-full">
             <Navbar />
@@ -18,11 +20,9 @@ export default function Home() {
           <main>
             <AboutMe />
           </main>
+          <MyServices />
           <div>
-            <h1>resume/skills</h1>
-          </div>
-          <div>
-            <h1>Projects</h1>
+            <Projects />
           </div>
           <div>
             <h1>contact</h1>
