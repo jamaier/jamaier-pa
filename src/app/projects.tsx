@@ -6,7 +6,6 @@ import { projects as projectItem, Category } from "../components/projects/Projec
 
 // Animation
 import { fadeInUp, routeFade, stagger } from "../components/animations/animations";
-import Head from "next/head";
 
 // Components
 import ProjectCard from "@/components/projects/ProjectsCard";
@@ -40,9 +39,6 @@ const Projects = () => {
       animate="visible"
       exit="exit"
     >
-      <Head>
-        <title>Jacob Maier | Web Developer</title>
-      </Head>
       <ProjectsNavbar handleFilterCategory={handleFilterCategory} active={active} />
       <motion.div
         variants={stagger}

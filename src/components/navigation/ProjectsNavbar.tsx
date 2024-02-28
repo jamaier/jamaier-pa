@@ -8,7 +8,7 @@ const NavItem: FunctionComponent<{
   active: string;
   handleFilterCategory: Function;
 }> = ({ value, active, handleFilterCategory }) => {
-  var className = "capitalize cursor-pointer hover:text-green";
+  var className = "capitalize cursor-pointer hover:text-green-600";
   if (active === value) className += " text-green";
 
   return (
@@ -25,9 +25,10 @@ const ProjectsNavbar: FunctionComponent<{
   return (
     <nav className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">
       <NavItem value="all" {...props} />
-      <NavItem value="react" {...props} />
-      <NavItem value="javascript" {...props} />
-      <NavItem value="csharp" {...props} />
+      <NavItem value="nextjs" {...props} />
+      <NavItem value="react-native" {...props} />
+      <NavItem value="javascript/typescript" {...props} />
+      <NavItem value=".NET" {...props} />
     </nav>
   );
 };

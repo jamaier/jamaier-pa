@@ -25,15 +25,14 @@ const ProjectCard: FunctionComponent<{
   // TODO scroll to top
   return (
     <>
-      <div className="items-center justify-center">
+      <div className="flex items-center justify-center">
         <Image
           width="300"
           height="150"
           src={image_path}
-          // className="responsive"
           alt={name}
           onClick={() => setShowDetail(id)}
-          className="cursor-pointer responsive "
+          className="cursor-pointer responsive rounded-md overflow-hidden"
           quality={10}
         />
       </div>
@@ -42,12 +41,11 @@ const ProjectCard: FunctionComponent<{
       {showDetail === id && (
         <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:p-10 dark:bg-black-100 dark:text-gray-100 md:grid-cols-2 gap-x-12 ">
           <motion.div variants={stagger} initial="initial" animate="animate">
-            <motion.div className="border-4 border-gray-100 " variants={fadeInUp}>
+            <motion.div className="flex justify-center items-center" variants={fadeInUp}>
               <Image
                 src={image_path}
                 alt={name}
                 className="overflow-hidden responsive"
-                // style="responsive"
                 width={300}
                 height={150}
               />
