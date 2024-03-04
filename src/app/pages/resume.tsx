@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import { routeFade, fadeInUp } from "@/components/animations/animations";
+import { routeFade, fadeInUp } from "@/app/components/animations/animations";
 
-import SkillBar from "@/components/resume/SkillBar";
+import SkillBar from "@/app/components/resume/SkillBar";
 
-import { ResumeData } from "@/components/resume/ResumeData";
-import { languages, tools } from "@/components/resume/ResumeData";
+import { ResumeData } from "@/app/components/resume/ResumeData";
+import { languages, tools } from "@/app/components/resume/ResumeData";
 
 const Resume = () => {
   const renderResumeData = (jobNumber: number) => {

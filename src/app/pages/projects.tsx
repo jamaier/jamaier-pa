@@ -8,8 +8,8 @@ import { projects as projectItem, Category } from "../components/projects/Projec
 import { fadeInUp, routeFade, stagger } from "../components/animations/animations";
 
 // Components
-import ProjectCard from "@/components/projects/ProjectsCard";
-import ProjectsNavbar from "@/components/navigation/ProjectsNavbar";
+import ProjectCard from "@/app/components/projects/ProjectsCard";
+import ProjectsNavbar from "@/app/components/navigation/ProjectsNavbar";
 
 const Projects = () => {
   const [projects, setProjects] = useState(projectItem);

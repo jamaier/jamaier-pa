@@ -4,13 +4,13 @@ import "../styles/globals.css";
 
 // Animation
 import { motion } from "framer-motion";
-import { fadeInUp, routeFade, stagger } from "@/components/animations/animations";
+import { fadeInUp, routeFade, stagger } from "@/app/components/animations/animations";
 
 // Components
-import ServiceCard from "@/components/services/ServiceCard";
+import ServiceCard from "@/app/components/services/ServiceCard";
 
 // Data
-import { services } from "@/components/services/ServiceData";
+import { services } from "@/app/components/services/ServiceData";
 
 const MyServices = () => {
   return (

@@ -4,11 +4,11 @@ import type { AppProps } from "next/app";
 import { ThemeProvider } from "next-themes";
 
 // Components
-import Navbar from "@/components/navigation/Navbar";
-import AboutMe from "./AboutMe";
-import MyServices from "./myServices";
-import Projects from "./projects";
-import Resume from "./resume";
+import Navbar from "@/app/components/navigation/Navbar";
+import AboutMe from "./pages/AboutMe";
+import MyServices from "./pages/myServices";
+import Projects from "./pages/projects";
+import Resume from "./pages/resume";
 
 export default function Home() {
   return (

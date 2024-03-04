@@ -1,15 +1,29 @@
 {
-  "dev": {
+  "staging": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-portfolio-dev-133738-authRole",
-      "UnauthRoleArn": "arn:aws:iam::937586106882:role/amplify-portfolio-dev-133738-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::937586106882:role/amplify-portfolio-dev-133738-authRole",
+      "AuthRoleName": "amplify-jamaierpa-staging-163450-authRole",
+      "UnauthRoleArn": "arn:aws:iam::937586106882:role/amplify-jamaierpa-staging-163450-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::937586106882:role/amplify-jamaierpa-staging-163450-authRole",
       "Region": "us-west-2",
-      "DeploymentBucketName": "amplify-portfolio-dev-133738-deployment",
-      "UnauthRoleName": "amplify-portfolio-dev-133738-unauthRole",
-      "StackName": "amplify-portfolio-dev-133738",
-      "StackId": "arn:aws:cloudformation:us-west-2:937586106882:stack/amplify-portfolio-dev-133738/d7fa0120-99ff-11ee-aa25-0a6b4185812f",
-      "AmplifyAppId": "d16sh6pxnoxucm"
+      "DeploymentBucketName": "amplify-jamaierpa-staging-163450-deployment",
+      "UnauthRoleName": "amplify-jamaierpa-staging-163450-unauthRole",
+      "StackName": "amplify-jamaierpa-staging-163450",
+      "StackId": "arn:aws:cloudformation:us-west-2:937586106882:stack/amplify-jamaierpa-staging-163450/4b110710-d657-11ee-820f-02e317d00155",
+      "AmplifyAppId": "d3k1jw37g7l7nt",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-jamaierpa-staging-163450-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-jamaierpa-staging-163450-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "function": {
+        "jamaierpaAuthPostConfirmation": {
+          "GROUP": "visitingUser"
+        },
+        "jamaierpaAuthPreSignup": {
+          "DOMAINALLOWLIST": "",
+          "DOMAINDENYLIST": "fake.com"
+        },
+        "jamaierpa02282024": {}
+      }
     }
   }
 }

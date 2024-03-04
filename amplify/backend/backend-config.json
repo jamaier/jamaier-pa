@@ -1,1 +1,32 @@
-{}
+{
+  "api": {},
+  "auth": {},
+  "function": {},
+  "parameters": {
+    "AMPLIFY_function_jamaierpaAuthPostConfirmation_GROUP": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "jamaierpaAuthPostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_jamaierpaAuthPreSignup_DOMAINALLOWLIST": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "jamaierpaAuthPreSignup"
+        }
+      ]
+    },
+    "AMPLIFY_function_jamaierpaAuthPreSignup_DOMAINDENYLIST": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "jamaierpaAuthPreSignup"
+        }
+      ]
+    }
+  },
+  "storage": {}
+}

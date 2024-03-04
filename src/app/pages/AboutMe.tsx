@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 // Animation
-import { routeFade } from "@/components/animations/animations";
+import { routeFade } from "@/app/components/animations/animations";
 import { motion } from "framer-motion";
 
 // Assets

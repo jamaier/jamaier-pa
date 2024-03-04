@@ -64,9 +64,10 @@ const Navbar: FunctionComponent = () => {
               transition={{ duration: 0.3 }}
               className="absolute top-full left-0 right-0 bg-white z-10 flex flex-col items-center md:flex-row md:top-auto md:left-auto md:right-auto md:static md:bg-transparent md:space-x-4 md:items-center md:justify-center md:flex-grow"
             >
-              <NavItem active={active} setActive={setActive} name="About" route="/" />
-              <NavItem active={active} setActive={setActive} name="Resume" route="/" />
-              <NavItem active={active} setActive={setActive} name="Projects" route="/" />
+              <NavItem active={active} setActive={setActive} name="About" route="/AboutMe" />
+              <NavItem active={active} setActive={setActive} name="Resume" route="/resume" />
+              <NavItem active={active} setActive={setActive} name="Projects" route="/projects" />
+              <NavItem active={active} setActive={setActive} name="Blog" route="/blog" />
             </motion.div>
           )}
         </AnimatePresence>
@@ -75,6 +76,7 @@ const Navbar: FunctionComponent = () => {
           <NavItem active={active} setActive={setActive} name="About" route="/" />
           <NavItem active={active} setActive={setActive} name="Resume" route="/" />
           <NavItem active={active} setActive={setActive} name="Projects" route="/" />
+          <NavItem active={active} setActive={setActive} name="Blog" route="/Blog" />
         </div>
         <button
           onClick={changeMode}

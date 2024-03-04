@@ -10,7 +10,7 @@ import { AiFillGithub, AiFillProject } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 
 // Animation
-import { fadeInUp, stagger } from "@/components/animations/animations";
+import { fadeInUp, stagger } from "../animations/animations";
 import { motion } from "framer-motion";
 
 const ProjectCard: FunctionComponent<{
@@ -32,14 +32,14 @@ const ProjectCard: FunctionComponent<{
           src={image_path}
           alt={name}
           onClick={() => setShowDetail(id)}
-          className="cursor-pointer responsive rounded-md overflow-hidden"
+          className="cursor-pointer responsive rounded-md overflow-hidden max-h-36"
           quality={10}
         />
       </div>
 
       <p className="my-2 text-center">{name}</p>
       {showDetail === id && (
-        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:p-10 dark:bg-black-100 dark:text-gray-100 md:grid-cols-2 gap-x-12 ">
+        <div className="absolute top-0 left-0 z-10 grid w-full p-2 text-black bg-gray-100 rounded-lg md:p-10 dark:bg-black-100 dark:text-gray-100 md:grid-cols-2 gap-x-12 ">
           <motion.div variants={stagger} initial="initial" animate="animate">
             <motion.div className="flex justify-center items-center" variants={fadeInUp}>
               <Image

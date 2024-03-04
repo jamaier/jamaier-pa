@@ -1,9 +1,10 @@
 import { StaticImageData } from "next/image";
 // Assets
-import devSocImg from "../../../public/assets/DevSoc.png";
-import starFighterImg from "../../../public/assets/starFighter.png";
-import sweetsAndTreats from "../../../public/assets/sweetsandtreats.png";
-import spaceJelly from "../../../public/assets/spaceJelly.png";
+import devSocImg from "../../../../public/assets/DevSoc.png";
+import starFighterImg from "../../../../public/assets/starFighter.png";
+import sweetsAndTreats from "../../../../public/assets/sweetsandtreats.png";
+import spaceJelly from "../../../../public/assets/spaceJelly.png";
+import nombolo from "../../../../public/assets/nomboloSplash.png";
 
 // TODO create types and add project info
 
@@ -43,6 +44,16 @@ export const projects: IProject[] = [
   },
   {
     id: 1,
+    name: "Nombolo",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
+    image_path: nombolo,
+    deployed_url: "https://www.nombolo.com/",
+    github_url: "N/A",
+    category: ["react-native"],
+    key_techs: ["JavaScript", "ThreeJS", "Node.js", "Webpack"],
+  },
+  {
+    id: 2,
     name: "ThreeJS Animation",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
     image_path: spaceJelly,
@@ -52,7 +63,7 @@ export const projects: IProject[] = [
     key_techs: ["JavaScript", "ThreeJS", "Node.js", "Webpack"],
   },
   {
-    id: 2,
+    id: 3,
     name: "Space VSCode Star Fighter",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
     image_path: starFighterImg,
@@ -62,7 +73,7 @@ export const projects: IProject[] = [
     key_techs: ["JavaScript", "Node.js", "Webpack"],
   },
   {
-    id: 3,
+    id: 4,
     name: "Pierre's Sweet and Savory Treats",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
     image_path: sweetsAndTreats,
