@@ -1,10 +1,10 @@
 import { StaticImageData } from "next/image";
 // Assets
-import devSocImg from "../../../../public/assets/DevSoc.png";
-import starFighterImg from "../../../../public/assets/starFighter.png";
-import sweetsAndTreats from "../../../../public/assets/sweetsandtreats.png";
-import spaceJelly from "../../../../public/assets/spaceJelly.png";
-import nombolo from "../../../../public/assets/nomboloSplash.png";
+import devSocImg from "/public/assets/DevSoc.png";
+import starFighterImg from "/public/assets/starFighter.png";
+import sweetsAndTreats from "/public/assets/sweetsandtreats.png";
+import spaceJelly from "/public/assets/spaceJelly.png";
+import uber from "/public/assets/uberClone.png";
 
 // TODO create types and add project info
 
@@ -44,10 +44,10 @@ export const projects: IProject[] = [
   },
   {
     id: 1,
-    name: "Nombolo",
+    name: "Uber Clone",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
-    image_path: nombolo,
-    deployed_url: "https://www.nombolo.com/",
+    image_path: uber,
+    deployed_url: "https://github.com/jamaier/RN-Uber",
     github_url: "N/A",
     category: ["react-native"],
     key_techs: ["JavaScript", "ThreeJS", "Node.js", "Webpack"],
