@@ -12,23 +12,23 @@ import Resume from "./pages/resume";
 import Footer from "./components/footer/Footer";
 
 export default function Home({ Component, pageProps }: AppProps) {
-  const Data = [
+  const AboutData = { Component: AboutMe, id: "aboutMe" };
+  const ComponentData = [
     { Component: MyServices, id: "myServices" },
     { Component: Resume, id: "resume" },
     { Component: Projects, id: "projects" },
-    { Component: AboutMe, id: "aboutMe" },
   ];
   return (
     <ThemeProvider attribute="class">
-      <div className="min-w-full fixed bg-gradient-to-tr from-gray-400 to-gray-100 dark:from-black-100 dark:to-black-300">
+      <div className="min-w-full fixed z-10 bg-gradient-to-tr from-gray-400 to-gray-100 dark:from-black-100 dark:to-black-300">
         <Navbar />
       </div>
       <div className="flex flex-col justify-center items-center pt-24">
         <div className="max-w-[1000px]">
-          <main id={Data[3].id}>
+          <main id={AboutData.id}>
             <AboutMe />
           </main>
-          {Data.map(({ Component, id }, i) => (
+          {ComponentData.map(({ Component, id }, i) => (
             <div key={i} id={id} className="my-3 px-6 rounded-md bg-gray-200 dark:bg-black-200">
               <Component />
             </div>

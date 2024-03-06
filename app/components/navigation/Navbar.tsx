@@ -27,6 +27,12 @@ const Navbar: React.FC = () => {
       </Link>
 
       <div className="text-base font-normal md:text-xl flex flex-row items-center relative">
+        <button
+          onClick={changeMode}
+          className="flex text-white transition duration-200 ease-in-out rounded-full cursor-pointer dark:text-white px-3"
+        >
+          {theme === "light" ? <MdLightMode size={25} /> : <MdDarkMode size={25} />}
+        </button>
         <button onClick={toggleMenu} className="md:hidden text-2xl focus:outline-none">
           {menuOpen ? <MdClose /> : <MdMenu />}
         </button>
@@ -59,12 +65,6 @@ const Navbar: React.FC = () => {
           )}
         </div>
 
-        <button
-          onClick={changeMode}
-          className="flex text-white transition duration-200 ease-in-out rounded-full cursor-pointer dark:text-white px-3"
-        >
-          {theme === "light" ? <MdLightMode size={30} /> : <MdDarkMode size={30} />}
-        </button>
         <div className="hidden md:flex flex-row items-center">
           <NavItem
             active={active}
