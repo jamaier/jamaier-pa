@@ -18,7 +18,9 @@ const MyServices = () => {
       className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-black-100 rounded-md"
       style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
     >
-      <h4 className="my-3 text-xl font-semibold tracking-wide text-gray-900">What I am doing</h4>
+      <h4 className="my-3 mx-5 text-xl font-semibold tracking-wide text-gray-900 font-montserrat">
+        Skills I have to offer:{" "}
+      </h4>
 
       <motion.div
         className="grid gap-6 my-3 md:grid-cols-2"

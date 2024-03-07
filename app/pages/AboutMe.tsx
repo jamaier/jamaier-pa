@@ -17,14 +17,22 @@ const AboutMe = () => {
       exit="exit"
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 items-center">
-        <div className="px-4 mx-6 sm:order-2">
-          <Image src={Hero} alt="developer hero image" className="rounded-lg -z-10" />
+        <div className="sm:order-2">
+          <Image src={Hero} alt="developer hero image" className="rounded-lg" />
         </div>
-        <h5 className="my-3 font-semibold text-xl text-center sm:text-left sm:order-1">
-          About Me Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores labore sint
-          quaerat qui quibusdam deserunt consequuntu still like this for now just needs to be
-          updated
-        </h5>
+        <div className="flex flex-col px-5">
+          <h1 className="mt-3 font-bold text-xl font-montserrat text-center sm:text-left sm:order-1">
+            Hey there!
+          </h1>
+          <h1 className="mb-3 font-bold text-xl font-montserrat text-center sm:text-left sm:order-1">
+            My name is Jake
+          </h1>
+          <h5 className="font-semibold text-lg font-montserrat text-center sm:text-left sm:order-1">
+            About Me Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores labore sint
+            quaerat qui quibusdam deserunt consequuntu still like this for now just needs to be
+            updated
+          </h5>
+        </div>
       </div>
     </motion.div>
   );

@@ -21,9 +21,17 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body
-        className={`${inter.className} bg-fixed bg-gradient-to-tr text-black from-gray-400 to-gray-100 dark:text-gray-100 dark:from-black-100 dark:to-black-300`}
+        className={`${inter.className} bg-fixed bg-gradient-to-tr text-black-200 from-gray-400 to-gray-100 dark:text-gray-100 dark:from-black-100 dark:to-black-200`}
       >
         {children}
       </body>

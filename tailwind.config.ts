@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { Roboto_Slab } from "next/font/google";
 
 const config: Config = {
   darkMode: "class",
@@ -24,6 +25,8 @@ const config: Config = {
     fontFamily: {
       sans: ["ui-sans-serif", "system-ui"],
       kaushan: ["Kaushan Script"],
+      roboto: ["Roboto Slab"],
+      montserrat: ["Montserrat"],
     },
     boxShadow: {
       "custom-light": " 0 0 10px #313131",
@@ -43,6 +46,14 @@ const config: Config = {
         300: "#16181D",
         400: "#0f1115",
         500: "#0a0b0e",
+      },
+      neutral: {
+        DEFAULT: "#a3a3a3",
+        100: "#737373",
+        200: "#525252",
+        300: "#404040",
+        400: "#262626",
+        500: "#171717",
       },
       gray: {
         DEFAULT: "#2e2f33",
